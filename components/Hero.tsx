@@ -1,19 +1,12 @@
 import Link from 'next/link';
+import Image from 'next/image';
+
 const Hero = () => {
     return (
-        <section className="flex flex-col items-center space-y-3 md:justify-around md:flex-row mt-7 md:mt-20">
-            <div className="inline-block p-0.5 bg-white rounded-full bg-gradient-to-bl to-gray-500 from-red-500 transition hover:to-red-500 hover:from-gray-500">
-                <div className="p-0.5 bg-black rounded-full ">
-                    <img
-                        src="/img/photo_profil.jpg"
-                        alt="Santos Pierre"
-                        className="rounded-full w-36 h-36 md:w-52 md:h-52"
-                    />
-                </div>
-            </div>
-            <div className="flex-col space-y-4 md:w-2/3">
+        <section className="flex flex-col-reverse items-center space-y-3 md:flex-row mt-7 md:mt-20">
+            <div className="flex-col space-y-4 md:pr-36">
                 <div className="flex-col space-y-1">
-                    <h1 className="text-3xl font-bold tracking-wide text-center md:text-left md:text-5xl">
+                    <h1 className="text-4xl font-bold tracking-wide text-center md:text-left md:text-5xl">
                         Santos Pierre
                     </h1>
                     <h2 className="text-lg tracking-widest text-center md:text-2xl md:text-left">
@@ -59,6 +52,12 @@ const Hero = () => {
                             </svg>
                         </a>
                     </Link>
+                </div>
+            </div>
+            <div></div>
+            <div className=" inline-block p-0.5 bg-white rounded-full bg-gradient-to-bl to-gray-500 from-red-500 transition hover:to-red-500 hover:from-gray-500">
+                <div className="p-0.5 relative bg-black rounded-full w-[120px] h-[120px] overflow-hidden">
+                    <Image src="/img/photo_profil.jpg" layout="fill" />
                 </div>
             </div>
         </section>
