@@ -1,23 +1,31 @@
 import Link from 'next/link';
 const Hero = () => {
     return (
-        <section className="flex flex-col items-center space-y-3 mt-7">
-            <div className="inline-block p-0.5 bg-white rounded-full">
+        <section className="flex flex-col items-center space-y-3 md:justify-around md:flex-row mt-7 md:mt-20">
+            <div className="inline-block p-0.5 bg-white rounded-full bg-gradient-to-bl to-gray-500 from-red-500 transition hover:to-red-500 hover:from-gray-500">
                 <div className="p-0.5 bg-black rounded-full ">
-                    <img src="/img/photo_profil.jpg" alt="Santos Pierre" className="rounded-full w-36 h-36" />
+                    <img
+                        src="/img/photo_profil.jpg"
+                        alt="Santos Pierre"
+                        className="rounded-full w-36 h-36 md:w-52 md:h-52"
+                    />
                 </div>
             </div>
             <div className="flex-col space-y-4">
                 <div className="flex-col space-y-1">
-                    <h1 className="text-3xl font-bold tracking-wide text-center">Santos Pierre</h1>
-                    <h2 className="text-lg tracking-widest text-center">Full-Stack Developer</h2>
+                    <h1 className="text-3xl font-bold tracking-wide text-center md:text-left md:text-5xl">
+                        Santos Pierre
+                    </h1>
+                    <h2 className="text-lg tracking-widest text-center md:text-2xl md:text-left">
+                        Full-Stack Developer
+                    </h2>
                 </div>
-                <div className="flex justify-center space-x-6">
+                <div className="flex justify-center space-x-6 md:justify-start md:space-x-4">
                     <Link href="https://www.linkedin.com/in/pierre-santos-batista-84a80b194/">
                         <a className="text-gray-400 hover:text-gray-300">
                             <span className="sr-only">LinkedIn</span>
                             <svg
-                                className="w-5 h-5"
+                                className="w-5 h-5 md:w-7 md:h-7"
                                 aria-hidden="true"
                                 fill="currentColor"
                                 viewBox="0 0 20 20"
@@ -34,7 +42,7 @@ const Hero = () => {
                         <a className="text-gray-400 hover:text-gray-300">
                             <span className="sr-only">Github</span>
                             <svg
-                                className="w-5 h-5"
+                                className="w-5 h-5 md:w-7 md:h-7"
                                 aria-hidden="true"
                                 fill="currentColor"
                                 viewBox="0 0 20 20"
