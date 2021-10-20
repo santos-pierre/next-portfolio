@@ -11,7 +11,7 @@ const Hero = () => {
                     />
                 </div>
             </div>
-            <div className="flex-col space-y-4">
+            <div className="flex-col space-y-4 md:w-2/3">
                 <div className="flex-col space-y-1">
                     <h1 className="text-3xl font-bold tracking-wide text-center md:text-left md:text-5xl">
                         Santos Pierre
@@ -19,6 +19,10 @@ const Hero = () => {
                     <h2 className="text-lg tracking-widest text-center md:text-2xl md:text-left">
                         Full-Stack Developer
                     </h2>
+                    <p className="font-light tracking-wide text-center break-words md:text-left">
+                        I like to carry out my projects and learn every day, not hesitating to question myself
+                        to progress. Next.JS & GraphQL enthusiast.
+                    </p>
                 </div>
                 <div className="flex justify-center space-x-6 md:justify-start md:space-x-4">
                     <Link href="https://www.linkedin.com/in/pierre-santos-batista-84a80b194/">
