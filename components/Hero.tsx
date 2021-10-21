@@ -14,7 +14,7 @@ const Hero = () => {
                     </h2>
                     <p className="font-light tracking-wide text-center break-words md:text-left">
                         I like to carry out my projects and learn every day, not hesitating to question myself
-                        to progress. Next.JS & GraphQL enthusiast.
+                        to progress. Next.JS, Laravel & GraphQL enthusiast.
                     </p>
                 </div>
                 <div className="flex justify-center space-x-6 md:justify-start md:space-x-4">
