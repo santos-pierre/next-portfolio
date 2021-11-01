@@ -54,9 +54,9 @@ const Hero = () => {
                     </Link>
                 </div>
             </div>
-            <div></div>
-            <div className=" inline-block p-0.5 bg-white rounded-full bg-gradient-to-bl to-gray-500 from-red-500 transition hover:to-red-500 hover:from-gray-500">
-                <div className="p-0.5 relative bg-black rounded-full w-[120px] h-[120px] overflow-hidden">
+            <div className="relative inline-block py-5 rounded-full group">
+                <div className="absolute bg-gradient-to-br to-gray-300 from-red-500 w-[120px] h-[120px] rounded-full blur-md opacity-75 group-hover:opacity-100 transition duration-200 animate-tilt"></div>
+                <div className="relative rounded-full w-[120px] h-[120px] overflow-hidden">
                     <Image src="/img/photo_profil.jpg" layout="fill" />
                 </div>
             </div>
