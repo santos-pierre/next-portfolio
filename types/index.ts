@@ -11,3 +11,10 @@ export type ItemExperienceType = {
     content: string;
     technologies: Technologie[];
 };
+
+export type ItemProjectType = {
+    title: string;
+    content: string;
+    url: string;
+    technologies: Technologie[];
+};

@@ -1,5 +1,6 @@
 import Experiences from '@/components/Experiences';
-import Hero from '../components/Hero';
+import Projects from '@/components/Projects';
+import Hero from '@/components/Hero';
 import BaseLayout from '../components/layout/BaseLayout';
 
 const Home: React.FC = () => {
@@ -7,6 +8,7 @@ const Home: React.FC = () => {
         <BaseLayout>
             <Hero />
             <Experiences />
+            <Projects />
         </BaseLayout>
     );
 };
