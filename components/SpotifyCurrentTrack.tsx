@@ -16,7 +16,7 @@ const getArtistName = (
 };
 
 const SpotifyCurrentTrack = () => {
-    const { data, error } = useSWR('/api/spotify/playing', fetcher);
+    const { data, error } = useSWR('/api/spotify/playing', fetcher, { refreshInterval: 15000 });
 
     if (error) {
         return <SpotifyNullState />;
