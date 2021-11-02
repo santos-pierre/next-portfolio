@@ -3,6 +3,7 @@ import Projects from '@/components/Projects';
 import Hero from '@/components/Hero';
 import BaseLayout from '../components/layout/BaseLayout';
 import SpotifyCurrentTrack from '@/components/SpotifyCurrentTrack';
+import Footer from '@/components/Footer';
 
 const Home: React.FC = () => {
     return (
@@ -10,7 +11,7 @@ const Home: React.FC = () => {
             <Hero />
             <Experiences />
             <Projects />
-            <SpotifyCurrentTrack />
+            <Footer />
         </BaseLayout>
     );
 };
