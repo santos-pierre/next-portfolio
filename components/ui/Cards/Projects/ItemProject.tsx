@@ -9,8 +9,8 @@ type ItemProjectProps = {
 const ItemProject: React.FC<ItemProjectProps> = ({ project, index }) => {
     return (
         <li className="flex-col justify-around px-10 py-8 space-y-3 bg-gray-800 rounded-2xl">
-            <div className="flex flex-col items-center space-x-5 space-y-5 md:flex-row md:space-y-0">
-                <h3 className="text-xl font-semibold">{project.title}</h3>
+            <div className="flex flex-col items-center space-x-0 space-y-5 md:flex-row md:space-y-0 md:space-x-5">
+                <h3 className="text-xl font-semibold text-center">{project.title}</h3>
                 <div className="items-center inline-block px-5 bg-gray-300 rounded-xl">
                     <div className="flex items-center h-10 space-x-5">
                         {project.technologies.map((techno) => {

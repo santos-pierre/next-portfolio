@@ -4,7 +4,7 @@ import SpotifyCurrentTrack from './SpotifyCurrentTrack';
 const Footer = () => {
     return (
         <>
-            <div className="max-w-md mx-auto border-t border-gray-800"></div>
+            <div className="mx-auto border-t border-gray-800"></div>
             <footer className="grid grid-cols-1 py-10 md:grid-cols-2">
                 <SpotifyCurrentTrack />
                 <div className="mt-8 space-y-8 xl:col-span-1 mx-7 md:mx-5">

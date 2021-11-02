@@ -33,12 +33,12 @@ const SpotifyCurrentTrack = () => {
     return (
         <div className="relative mx-7 md:mx-0">
             <div className="absolute inset-0 bg-green-600 rounded-lg md:w-96 blur-md animate-tilt"> </div>
-            <div className="relative flex items-center h-24 px-5 bg-gray-900 rounded-lg space-x-7 md:w-96">
-                <SpotifyIcon className="w-16 h-16" />
-                <div className="flex flex-col w-60">
+            <div className="relative flex items-center w-auto h-24 px-5 bg-gray-900 rounded-lg space-x-7 md:w-96">
+                <SpotifyIcon className="w-10 h-10 md:w-12 md:h-12" />
+                <div className="flex flex-col w-36 md:w-60">
                     <p className="font-semibold truncate">{getArtistName(data.artists)}</p>
-                    <p className="truncate">{data.title}</p>
-                    <p className="text-sm font-light truncate">{data.album}</p>
+                    <p className="text-sm truncate">{data.title}</p>
+                    <p className="text-xs font-light truncate">{data.album}</p>
                 </div>
             </div>
         </div>
