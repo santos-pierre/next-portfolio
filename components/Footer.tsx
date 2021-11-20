@@ -7,8 +7,8 @@ const Footer = () => {
             <div className="mx-auto border-t border-gray-800"></div>
             <footer className="grid grid-cols-1 py-10 md:grid-cols-2">
                 <SpotifyCurrentTrack />
-                <div className="mt-8 space-y-8 xl:col-span-1 mx-7 md:mx-5">
-                    <div className="flex space-x-6">
+                <div className="mt-10 space-y-4">
+                    <div className="flex space-x-2 justify-center ">
                         <Link href="https://www.linkedin.com/in/pierre-santos-batista-84a80b194/">
                             <a className="text-gray-400 hover:text-gray-300">
                                 <span className="sr-only">LinkedIn</span>
@@ -44,7 +44,7 @@ const Footer = () => {
                             </a>
                         </Link>
                     </div>
-                    <p className="text-base text-gray-500">Made with Next.JS</p>
+                    <p className="text-base text-gray-500 text-center">Made with Next.JS</p>
                 </div>
             </footer>
         </>
